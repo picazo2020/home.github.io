@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjeta Digital - Ing. en Sistemas</title>
+    <link rel="stylesheet" href="cdnjs.cloudflare.com">
+    <style>
+        :root {
+            --primary: #00d4ff;
+            --dark: #121212;
+            --gray: #1e1e1e;
+            --text: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0a0a0a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: var(--gray);
+            width: 350px;
+            border-radius: 20px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 212, 255, 0.2);
+            border: 1px solid #333;
+            color: var(--text);
+        }
+
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid var(--primary);
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        h1 { margin: 10px 0 5px; font-size: 1.5rem; }
+        p.subtitle { color: var(--primary); font-weight: bold; margin-bottom: 20px; }
+
+        .services {
+            text-align: left;
+            font-size: 0.9rem;
+            background: #252525;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .services li { list-style: none; margin-bottom: 5px; }
+        .services li::before { content: "✔ "; color: var(--primary); }
+
+        .links { display: flex; flex-direction: column; gap: 10px; }
+
+        .btn {
+            text-decoration: none;
+            color: white;
+            background: #333;
+            padding: 12px;
+            border-radius: 8px;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn:hover { background: var(--primary); color: var(--dark); }
+        
+        .btn-whatsapp { background: #25d366; color: white !important; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <!-- Reemplaza con tu foto -->
+        <img src="perfil.jpeg" alt="Ingeniero de Sistemas" class="profile-img">
+        
+        <h1>Ing. Picazo Alexander</h1>
+        <p class="subtitle">Soluciones Integrales</p>
+
+        <div class="services">
+            <li>Soporte Tecnico</li>
+            <li>Redes & Ciberseguridad </li>
+            <li>Desarrollo Web</li>
+            <li>Consultoria</li>
+        </div>
+
+        <div class="links">
+            <a href="https://wa.me/+525562533167" class="btn btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Contactar por WhatsApp
+            </a>
+            <a href="mailto:aapicazor@gmail.com" class="btn">
+                <i class="fas fa-envelope"></i> Enviar Correo
+            </a>
+            <a href="linkedin.com" class="btn">
+                <i class="fab fa-linkedin"></i> Ver LinkedIn
+            </a>
+            <a href="https://tu-portafolio.com" class="btn">
+                <i class="fas fa-globe"></i> Portafolio Web
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
